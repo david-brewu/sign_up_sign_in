@@ -2,7 +2,8 @@
 import 'package:flutter/material.dart';
 
 class ButtonSignUp extends StatelessWidget {
-  const ButtonSignUp({Key key}) : super(key: key);
+  final title;
+  const ButtonSignUp({Key key, @required this.title}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +26,7 @@ class ButtonSignUp extends StatelessWidget {
         SizedBox(
           width: 20,
         ),
-        Text('Sign Up',
+        Text(title,
             style: TextStyle(
                 color: Colors.white, fontSize: 30, fontWeight: FontWeight.bold))
       ],
