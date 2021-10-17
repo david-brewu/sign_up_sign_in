@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:signup/buttomSignup.dart';
+import 'package:signup/signup_options.dart';
 
 void main() {
   runApp(MyApp());
@@ -55,6 +56,7 @@ class _SignUpPageState extends State<SignUpPage> {
                       SizedBox(
                         height: 10,
                       ),
+                      SignUpOptions()
                     ]))));
   }
 }

@@ -4,24 +4,19 @@ import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:flutter_gradients/flutter_gradients.dart';
 
-_SignUpPageState _signUpPageState;
-
-class SignUpPage extends StatefulWidget {
-  const SignUpPage({Key key}) : super(key: key);
+class SignUpOptions extends StatefulWidget {
+  const SignUpOptions({Key key}) : super(key: key);
 
   @override
-  _SignUpPageState createState() {
-    _signUpPageState = _SignUpPageState();
-    return _signUpPageState;
-  }
+  _SignUpOptionsState createState() => _SignUpOptionsState();
 }
 
-class _SignUpPageState extends State<SignUpPage> {
+class _SignUpOptionsState extends State<SignUpOptions> {
   bool _togglevisibilty = true;
 
   @override
   Widget build(BuildContext context) {
-    return Column(children: [
+    return Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
       Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
